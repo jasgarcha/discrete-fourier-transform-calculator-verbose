@@ -154,10 +154,10 @@ public class DFT {
 			System.out.println("S("+k+") = "+round(SOfkReal)+"+"+round(SOfkImaginary)+"j"); //S(k)=real term+j*imaginary term.
 			System.out.println();			
 		}
-		//Comma seperated values.
+		//Comma separated values.
 		System.out.println("k, S(k)");
-		for(int i = 0; i < results.length; i++) //Print results.
-			System.out.println(results[i]);
+        //Print results.
+        for (String result : results) System.out.println(result);
 	}
 		
 	/**
@@ -191,7 +191,7 @@ public class DFT {
 	public void printAbsoluteValueOfDiscreteFourierTransform(double[] SOfkReal, double[] SOfkImaginary) {
 		double[] absoluteValueSOfk = absoluteValueOfDiscreteFourierTransform(SOfkReal, SOfkImaginary);
 		System.out.println("|S(k)|");
-		for(int i = 0; i < absoluteValueSOfk.length; i++)
-			System.out.println(round(absoluteValueSOfk[i]));
+        for (double d : absoluteValueSOfk)
+			System.out.println(round(d));
 	}
 }

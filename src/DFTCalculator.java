@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class DFTCalculator {
 	/**
 	 * 
-	 * @param args Comma seperated real numbers without white space. Options: -steps prints the Discrete Fourier transform with intermediate calculations. -abs prints the absolute value of the Discrete Fourier transform.  
+	 * @param args Comma separated real numbers without white space. Options: -steps prints the Discrete Fourier transform with intermediate calculations. -abs prints the absolute value of the Discrete Fourier transform.
 	 * If no arguments are provided, the program runs as an input of numbers. 
 	 */
 	public static void main(String[] args) {
@@ -77,11 +77,11 @@ public class DFTCalculator {
 		}		
 		else {
 			String[] arguments = null;
-			String[] numbers = null;
+			String[] numbers;
 			
 			Scanner input = new Scanner(System.in);
 			
-			System.out.println("Enter comma seperated real numbers without white space: ");
+			System.out.println("Enter comma separated real numbers without white space: ");
 			
 			String in = input.nextLine();
 			

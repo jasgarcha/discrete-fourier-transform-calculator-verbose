@@ -15,18 +15,18 @@ public class DFTExample {
 		
 		dft.discreteFourierTransform(sampledDataPoints, realTerms, imaginaryTerms);	
 		
-		String steps[][] = new String[sampledDataPoints.length][8]; 
+		String[][] steps = new String[sampledDataPoints.length][8];
 		dft.discreteFourierTransformWithSteps(sampledDataPoints, realTerms, imaginaryTerms, steps);
-		for(int i = 0; i < steps.length; i++)
-			for(int j = 0; j < steps[i].length; j++)
-				System.out.println(steps[i][j]);
+        for (String[] step : steps)
+            for (String s : step)
+				System.out.println(s);
 		System.out.println();
 
 		dft.printDiscreteFourierTransformWithSteps(sampledDataPoints);
 		
 		absoluteValue = dft.absoluteValueOfDiscreteFourierTransform(realTerms, imaginaryTerms);
-		for(int i = 0; i < absoluteValue.length; i++)
-			System.out.println(absoluteValue[i]);
+        for (double d : absoluteValue)
+			System.out.println(d);
 		System.out.println();
 
 		dft.printAbsoluteValueOfDiscreteFourierTransform(realTerms, imaginaryTerms);
