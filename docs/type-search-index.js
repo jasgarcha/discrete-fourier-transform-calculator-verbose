@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"discreteFourierTransform","l":"DFT"},{"p":"<Unnamed>","l":"DFTCalculator"},{"p":"<Unnamed>","l":"DFTExample"}];updateSearchResults();
